@@ -7,7 +7,6 @@
 //
 
 import XCTest
-import Logging
 
 class TodoeyUITests: XCTestCase {
     let logger = Logger(label: "com.example.BestExampleApp.main")
@@ -31,7 +30,6 @@ class TodoeyUITests: XCTestCase {
         app.launch()
         app.staticTexts.firstMatch.waitForExistence(timeout: 1)
         app.staticTexts.firstMatch.tap()
-        logger.info("dddd")
         XCTAssertEqual(2, 1)
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
